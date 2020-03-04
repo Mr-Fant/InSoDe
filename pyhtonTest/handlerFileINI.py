@@ -13,10 +13,6 @@ class HandlerFileINI:
         Arguments:
             pathFile {string} -- path to file ini
         
-
-        444444444444444444444444444444
-
-
         Raises:
             exceptions.InvalidTypeFile: invalid type file
             exceptions.ErrorReadFile: error read file
