@@ -2,7 +2,7 @@ class SectionNotFound(Exception):
     text = ''
 
     def __init__(self):
-        self.text = 'Section not found'
+        self.text = 'Section is not found'
 
 class ErrorReadFile(Exception):
     text = ''
