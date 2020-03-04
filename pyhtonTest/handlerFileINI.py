@@ -17,6 +17,12 @@ class HandlerFileINI:
 
     def add_value(self, id_section, key, value):
         self.Sections[id_section].AddData({key: value})
+    
+    def delete_value(self, id_section, key):
+        del self.Sections[id_section].Data[key]
+
+    def del_allKeys_inSection(self, id_section):
+        self.Sections[id_section].Data = []
 
     def read_file(self, pathFile):
         """Constructor class
