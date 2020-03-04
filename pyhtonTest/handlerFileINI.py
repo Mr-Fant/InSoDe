@@ -7,16 +7,23 @@ class HandlerFileINI:
     fileName = ''
     Sections = []
 
-    def __init__(self, pathFile):
+    def save_file(self, pathFile):
+        f = open('test1.ini', 'w')
+        for i in self.Sections
+            f.write('[', name,']')
+            for j in i.Data
+                f.write(j.key, ' = ', j.value) 
+
+
+    def add_value(self, id_section, key, value):
+        self.Sections[id_section].AddData({key: value})
+
+    def read_file(self, pathFile):
         """Constructor class
         
         Arguments:
             pathFile {string} -- path to file ini
         
-
-        444444444444444444444444444444
-
-
         Raises:
             exceptions.InvalidTypeFile: invalid type file
             exceptions.ErrorReadFile: error read file
@@ -73,3 +80,5 @@ class HandlerFileINI:
         """        
         for item in self.Sections:
             item.PrintSection()
+    
+    def 
